@@ -1,0 +1,17 @@
+{% extends parentLayout | default("_layouts/cp") %}
+
+{% import "_includes/forms" as forms %}
+{% import "socialposter/_includes/settings_field" as settingsField %}
+{% includeCssResource 'socialposter/css/SocialPoster.css' %}
+
+{% set title = (title is defined) ? title : 'Social Poster ' ~ tabs[selectedTab].label %}
+
+
+{% set content %}
+    {% block blockContent %}
+
+    {% endblock %}
+
+    <hr>
+
+{% endset %}
