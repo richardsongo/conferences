@@ -61,7 +61,7 @@ MwabukaMabassa021@
 
 
 
-<code>
+<blockquote>
 
 {% if image %}
  <a class="pull-right" href="{{ url }}"> 
@@ -71,4 +71,4 @@ MwabukaMabassa021@
  </a>
 {% endif %}
 
-</code>
+</blockquote>
