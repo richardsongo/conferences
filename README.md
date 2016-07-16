@@ -73,6 +73,23 @@ SPONSORS
 CODES
 -----------------------------------
 
+<pre>
+<code>
+
+{% for speaker in entry.eventSpeakers %}
+  
+  {{ speaker.title }}
+  {{ speaker.organization }}
+  {{ speaker.speaker-twitter }}
+  {{ speaker.speaker-photo }}
+  {{ speaker.speaker-bio }}
+  
+  
+{% endfor %}
+
+</code>
+</pre>
+
 
 
 <blockquote>
