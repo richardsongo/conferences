@@ -78,13 +78,23 @@ CODES
 
 {% for speaker in entry.eventSpeakers %}
   
-  {{ speaker.title }}
-  {{ speaker.organization }}
-  {{ speaker.speaker-twitter }}
-  {{ speaker.speaker-photo }}
-  {{ speaker.speaker-bio }}
+  <h2><a class="speaker-title" href="{{ speaker.url }}">{{ speaker.title }}</a></h2>
+  <div>{{ speaker.organization }}</div>
+  <a class="speaker-twittwe" href="{{ speaker.speaker-twitter }}">{{ speaker.speaker-twitter }}</a>
+  <a class="speaker-photo" href="{{ speaker.url }}"> {{ speaker.speaker-photo }}</a>
+  
+  <div>{{ speaker.speaker-bio }}</div>
   
   
+    {% set relatedPresentations = craft.entries.section('workshops').relatedTo(speaker) %}
+
+    {% for relatedPresentation in relatedPresentations %}
+
+      <h3><a class="program-title" href="{{ relatedPresentation.url }}">{{ relatedPresentation.title }}</a></h3>
+      
+    {% endfor %}
+
+
 {% endfor %}
 
 </code>
@@ -92,7 +102,8 @@ CODES
 
 
 
-<blockquote>
+<pre>
+<code>
 
 {% if image %}
  <a class="pull-right" href="{{ url }}"> 
@@ -102,4 +113,6 @@ CODES
  </a>
 {% endif %}
 
-</blockquote>
+</code>
+</pre>
+
