@@ -5,6 +5,7 @@ At a high level, we are settling on four content types:
 <li>Events</li>
 <li>Sessions</li>
 <li>Pages</li>
+<li>Blog</li>
 </ul>
 Those content types would be related together in the following ways:
 <ul>
@@ -51,14 +52,14 @@ SPEAKERS
 EVENTS
 -----------------------------------
 <ul>
-<li>Dates              {{ entry.event-date }}</li>
-<li>Location           {{ entry.event-location }}</li>
-<li>Event Name         {{ entry.event-name }}</li>
-<li>Speakers           {{ entry.event-speakers }}</li>
-<li>Program            {{ entry.event-program }}</li>
-<li>Venue              {{ entry.event-venue }}</li>
-<li>Register link {{ entry.event-registrationlink }}</li>
-<li>Sponsors & partners {{ entry.event-sponsors }}</li>
+<li>Dates / Field type: date              {{ entry.event-date }}</li>
+<li>Location / Field type: text           {{ entry.event-location }}</li>
+<li>Event Name / Field type: text         {{ entry.event-name }}</li>
+<li>Speakers / Field type: Relation           {{ entry.event-speakers }}</li>
+<li>Program / Field type: Matrix -> relation           {{ entry.event-program }}</li>
+<li>Venue / Field type: text area              {{ entry.event-venue }}</li>
+<li>Register link / Field type: text {{ entry.event-registrationlink }}</li>
+<li>Sponsors & partners / Field type: relation {{ entry.event-sponsors }}</li>
 </ul>
 
 SPONSORS
