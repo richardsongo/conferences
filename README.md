@@ -69,12 +69,29 @@ SPONSORS
 <li>Link {{ entry.sponsor-link }} </li>
 </ul>
 
+
+PAGES / NAVIGATION
+-----------------------------------
+<ul>
+<li>About</li>
+<li>Events </li>
+<li>Register </li>
+<li>Sponsors </li>
+<li>Blog </li>
+<li>Contact </li>
+</ul>
+
+
+
+
+
 PLUGGINS
 -----------------------------------
 <ul>
 <li>Redirect Manager</li>
-<li>SEO </li>
+<li>SEOmatic </li>
 </ul>
+
 
 
 
