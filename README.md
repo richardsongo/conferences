@@ -49,8 +49,8 @@ EVENTS
 SPONSORS
 -----------------------------------
 <ul>
-<li>- Logo {{ entry.sponsor-logo }}</li>
-<li>- Link {{ entry.sponsor-link }} </li>
+<li>Logo {{ entry.sponsor-logo }}</li>
+<li>Link {{ entry.sponsor-link }} </li>
 </ul>
 
 
