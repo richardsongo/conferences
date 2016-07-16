@@ -28,7 +28,7 @@ SPEAKERS
 -Photo             / {{ entry.speaker-photo }}
 -Twitter           / {{ entry.speaker-twitter }}
 -Content Related   / {{ entry.speaker-relatedcontent }}
-- 
+
 
 
 EVENTS
