@@ -81,18 +81,20 @@ CODES
   <h2><a class="speaker-title" href="{{ speaker.url }}">{{ speaker.title }}</a></h2>
   <div>{{ speaker.organization }}</div>
   <a class="speaker-twittwe" href="{{ speaker.speaker-twitter }}">{{ speaker.speaker-twitter }}</a>
-  <a class="speaker-photo" href="{{ speaker.url }}"> {{ speaker.speaker-photo }}</a>
+  
+  {% if speaker.speaker-photo %}
+  <a class="speaker-photo" href="{{ speaker.url }}">
+  <img src="{{ image.getUrl('small') }}" alt="{{ image.title }}" >
+  </a>
+  {% endif %}
   
   <div>{{ speaker.speaker-bio }}</div>
   
   
-    {% set relatedPresentations = craft.entries.section('workshops').relatedTo(speaker) %}
-
-    {% for relatedPresentation in relatedPresentations %}
-
-      <h3><a class="program-title" href="{{ relatedPresentation.url }}">{{ relatedPresentation.title }}</a></h3>
-      
-    {% endfor %}
+  {% set relatedPresentations = craft.entries.section('workshops').relatedTo(speaker) %}
+  {% for relatedPresentation in relatedPresentations %}
+  <h3><a class="program-title" href="{{ relatedPresentation.url }}">{{ relatedPresentation.title }}</a></h3>
+  {% endfor %}
 
 
 {% endfor %}
