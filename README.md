@@ -61,7 +61,7 @@ MwabukaMabassa021@
 
 
 
-
+<code>
 
 {% if image %}
  <a class="pull-right" href="{{ url }}"> 
@@ -70,3 +70,5 @@ MwabukaMabassa021@
    </figure> 
  </a>
 {% endif %}
+
+</code>
