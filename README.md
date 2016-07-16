@@ -1,3 +1,18 @@
+
+At a high level, we are settling on four content types:
+<ul>
+<li>Speakers</li>
+<li>Events</li>
+<li>Sessions</li>
+<li>Pages</li>
+</ul>
+Those content types would be related together in the following ways:
+<ul>
+<li>Speakers relate to Sessions</li>
+<li>Sessions relate to Events (via a Program matrix)</li>
+<li>Pages relate to Events</li>
+<li>Sponsors relate to Events</li>
+</ul>
 Conferences
 -----------------------------------
 
