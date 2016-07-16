@@ -69,6 +69,13 @@ SPONSORS
 <li>Link {{ entry.sponsor-link }} </li>
 </ul>
 
+PLUGGINS
+-----------------------------------
+<ul>
+<li>Redirect Manager</li>
+<li>SEO </li>
+</ul>
+
 
 
 CODES
