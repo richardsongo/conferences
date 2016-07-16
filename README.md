@@ -89,8 +89,7 @@ CODES
   {% endif %}
   
   <div>{{ speaker.speaker-bio }}</div>
-  
-  
+
   {% set relatedPresentations = craft.entries.section('workshops').relatedTo(speaker) %}
   {% for relatedPresentation in relatedPresentations %}
   <h3><a class="program-title" href="{{ relatedPresentation.url }}">{{ relatedPresentation.title }}</a></h3>
