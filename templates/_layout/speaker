@@ -13,7 +13,7 @@
   
   <a class="speaker-twitter" href="{{ speaker.speaker-twitter }}">http://twitter.com/{{ speaker.speaker-twitter }}</a>
   
-  {% set photo = speakerPhoto.first() %}
+  {% set photo = entry.speakerPhoto.first() %}
   {% if photo %}
   <a class="speaker-photo" href="{{ entry.url }}">
   <img src="{{ image.url }}" width="{{ image.width }}" height="{{ image.height }}">
