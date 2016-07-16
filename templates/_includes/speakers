@@ -1,0 +1,31 @@
+<div class="pane speakers-pane">
+    <nav id="tabs" class="tabs">
+        <ul>
+            {% for speaker in speakers %}
+
+<div class="w-clearfix speaker-block">
+                        <div class="w-clearfix speaker-photo">
+                            <a class="w-inline-block unstyled-link" href="{{ speaker.url }}">
+                            <img class="round-image" src="http://confabevents.com/images/speakers/_speakerPhotos/speaker-aalen.jpg">
+                            </a>
+                        </div>
+                        <div class="speaker-info">
+                            <h2><a class="unstyled-link" href="http://confabevents.com/speakers/ida-aalen">{{ speaker.speaker-name }}</a></h2>
+
+                            <div class="organization">{{ speaker.speaker-organization }}</div>
+                            <a class="w-clearfix w-inline-block social-block speaker-twitter" href="{{ speaker.speaker-twitter }}">
+                            <img class="social-icon speaker-twitter" src="/images/icon-twitter.svg" data-pin-nopin="true">
+                                <div class="social-text">{{ speaker.speaker-twitter }}</div>
+                            </a>
+                                                                                        <div class="program-session-or-workshop">
+                                    <!--<div class="criteria session-type">Workshops</div>-->
+                                    <h3><a class="program-title" href="/events/intensive/2016/program/setting-priorities-using-the-core-model-to-create-user-centered-content">Setting priorities: Using the core model to create user-centered content</a>
+                                    </h3>
+                                </div>
+                                                    </div>
+                    </div>
+
+            {% endfor %}
+        </ul>
+    </nav>
+  </div>
