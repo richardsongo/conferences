@@ -29,7 +29,7 @@ SPEAKERS
 <li>Photo             / {{ entry.speaker-photo }}</li>
 <li>Twitter           / {{ entry.speaker-twitter }}</li>
 <li>Biography           / {{ entry.speaker-bio }}</li>
-<li>Content Related   / {{ entry.speaker-relatedcontent }}</li>
+<li>Related Presentations   / {{ entry.speaker-relatedpresentations }}</li>
 </ul>
 
 
