@@ -90,8 +90,19 @@ PLUGGINS
 <ul>
 <li>Redirect Manager</li>
 <li>SEOmatic </li>
+<li>Newsletter </li>
+<li>SEOmatic </li>
+<li>Imports </li>
+<li>Ad </li>
+<li>Admin page CSS </li>
 </ul>
 
+
+URL
+---------------
+
+http://conferenceevent.com/events/eventname/2016
+http://conferenceevent.com/events/eventname/2016/speakers
 
 
 
