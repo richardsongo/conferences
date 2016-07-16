@@ -1,19 +1,11 @@
-*/ Conferences
+Conferences
 -----------------------------------
 
 
 
 
 
-*/ Sessions
------------------------------------
-
-
-
-
-
-
-*/ Pages (Structure)
+Sessions
 -----------------------------------
 
 
@@ -21,7 +13,15 @@
 
 
 
-*/ SPEAKERS
+Pages (Structure)
+-----------------------------------
+
+
+
+
+
+
+SPEAKERS
 -----------------------------------
 -Name              / {{ entry.speaker-name }}
 -Title             / {{ entry.speaker-organisation }}
@@ -30,11 +30,8 @@
 -Content Related   / {{ entry.speaker-relatedcontent }}
 - 
 
-MwabukaMabassa021@
 
-
-
-*/ EVENTS
+EVENTS
 -----------------------------------
 
 -Dates              {{ entry.event-date }}
@@ -47,7 +44,7 @@ MwabukaMabassa021@
 -Sponsors & partners {{ entry.event-sponsors }}
 
 
-*/ SPONSORS
+SPONSORS
 -----------------------------------
 
 - Logo {{ entry.sponsor-logo }}
@@ -56,7 +53,7 @@ MwabukaMabassa021@
 
 
 
-*/ CODES
+CODES
 -----------------------------------
 
 
