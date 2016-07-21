@@ -1,0 +1,35 @@
+{% set transform = {
+    mode: 'crop',
+    width: 300,
+    height: 300
+} %}
+{% do image.setTransform(transform) %}
+
+  
+  <h2>{{ entry.title }}</h2>
+  
+  <div>{{ speaker.organization }}</div>
+  
+  <a class="speaker-twitter" href="{{ speaker.speaker-twitter }}">http://twitter.com/{{ speaker.speaker-twitter }}</a>
+  
+  {% set photo = entry.speakerPhoto.first() %}
+  {% if photo %}
+  <a class="speaker-photo" href="{{ entry.url }}">
+  <img src="{{ image.url }}" width="{{ image.width }}" height="{{ image.height }}">
+  </a>
+  {% endif %}
+  
+  <div class="speaker-bio">
+  {{ entry.speaker-bio }}
+  </div>
+
+{% set relatedPresentations = craft.entries.section('workshops').relatedTo(entry) %}
+
+  <div class="speaker-previous-presentations">
+    <h3>Previous presentations:</h3>
+    <ul>
+      {% for relatedPresentation in relatedPresentations %}
+      <li><a class="program-title" href="{{ relatedPresentation.url }}">{{ relatedPresentation.title }}</a></li>
+      {% endfor %}
+    </ul> 
+  </div>
