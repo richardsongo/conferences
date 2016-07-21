@@ -1,0 +1,14 @@
+{% if entry.eventPricing | length %}
+    <h2>Ticket prices</h2>
+
+  <table width="100%">
+    <tbody>
+        {% for row in entry.eventPricing %}
+        <tr>
+           <td>{{ row.pricingDescription }}</td> <td>{{ row.pricingPrice }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+    
+{% endif %}
